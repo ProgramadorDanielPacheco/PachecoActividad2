@@ -1,9 +1,12 @@
 <strong>{{suma}}</strong>
 <input [(ngModel)]="numero"/>
+<button (click)="almacenar()">Almacenar</button>
 
-<strong *ngIf="numero >3">El numero es mayor que 3</strong>
+
+<p><strong *ngIf="numero >3">El numero es mayor que 3</strong></p>
 <p *ngIf="numero == 3">El numero  es 3</p>
 <p *ngIf="3> numero">El numero es menor que 3</p>
+
 
 <tr *ngFor="let sueldo of sueldos">
     <td>{{sueldo}}</td>
@@ -12,7 +15,10 @@
     <li>{{sueldo}}</li>
 </ul>
 <div *ngFor="let sueldo of sueldos">
-    <div>Sueldo: {{sueldo}}</div>
+    <div>Sueldo: {{sueldo}}</div> 
 </div>
+
+<button (click)="navegacion()">Pagina2</button>
+
 
 
