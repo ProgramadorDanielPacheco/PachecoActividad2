@@ -8,23 +8,27 @@ import { Router } from '@angular/router';
 })
 export class Componente2Component implements OnInit{
   constructor(private router:Router){}
+  Name: any
+  Email: any
+  Contrasena: any
+  repetirContrasena: any
+  Celular: any
 
-  resultado:any;
-  mensaje:any;
-  suma:number=0;
+  
   ngOnInit(): void {
-    this.recuperar
+    
   }
   navegacion(){
     this.router.navigate(['web1'])
   }
-  navegacion2(){
-    this.router.navigate(['web3'])
-  }
+
   recuperar(){
-    this.resultado=localStorage.getItem('valor_total');
-    this.suma=2+parseInt(this.resultado);
-    this.mensaje=localStorage.getItem('mensaje');
+    this.router.navigate(['web3'])
+    localStorage.setItem('Name', this.Name)
+    localStorage.setItem('Email', this.Email)
+    localStorage.setItem('Contrasena', this.Contrasena)
+    localStorage.setItem('repetirContrasena', this.repetirContrasena)
+    localStorage.setItem('Celular', this.Celular)
   }
 
 }

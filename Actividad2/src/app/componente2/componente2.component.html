@@ -1,4 +1,34 @@
-<p>Hola Mundo</p>
+<body style="background-image: url(https://cdn2.excelsior.com.mx/media/styles/image800x600/public/pictures/2022/05/19/2760221.jpg); height: 1000px; ">
+<h1 style="text-align: center;">Venta de Boletos</h1>
+<ul>
+    <li>
+        <label>Nombre Completo</label>
+        <input type="text" [(ngModel)]="Name">
+    </li>
+    <br>
+    <li>
+        <label>Email</label>
+        <input type="text" [(ngModel)]="Email">
+    </li>
+    <br>
+    <li>
+        <label>Contraseña</label>
+        <input type="password" [(ngModel)]="Contrasena">
+    </li>
+    <br>
+    <li>
+        <label>Confirma la Contraseña</label>
+        <input type="password" [(ngModel)]="repetirContrasena">
+    </li>
+    <br>
+    <li>
+        <label>Telefono</label>
+        <input type="text" [(ngModel)]="Celular">
+    </li>
+</ul>
 <button (click)="recuperar()">Recuperar</button>
 <button (click)="navegacion()">Pagina1</button>
+<br>
+
+</body>
 
